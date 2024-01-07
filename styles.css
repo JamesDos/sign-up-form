@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.left-container {
+  padding-top: 10%;
+  flex: 1;
+  background-image: url(/images/rainforest.jpg);
+  background-size: cover;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.logo-container > p {
+  font-size: 6em;
+  font-family: Norse-Bold, sans-serif;
+  color: white;
+  padding-top: 16px;
+}
+
+.logo-container > img {
+  width: auto;
+  height: 0;
+  min-height: 90%;
+}
+
+.right-container {
+  font-family: Roboto, san-serif;
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1 {
+  padding-top: 64px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-1, .section-2, .section-3 {
+  padding-left: 32px;
+  padding-right: 64px;
+  flex: 1;
+}
+
+.section-2 {
+  background-color: rgb(247, 252, 252);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding-bottom: 32px;
+}
+
+.section-2 > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-2 > form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+input {
+  width: 240px;
+  border: #E5E7EB;
+}
+
+form > div {
+  display: flex;
+  gap: 32px;
+}
+
+form > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  border: blue 1px solid;
+  box-shadow: 1px 1px black;
+}
+
+input:valid {
+  border: green 1px solid;
+}
+
+input:invalid {
+  border: red 1px solid;
+}
+
+.section-3 {
+  padding-top: 32px;
+}
+
+#create-account-btn {
+  font-weight: bold;
+  height: 40px;
+  width: 240px;
+  background-color: #596D48;
+  color: white;
+  border-radius: 8px;
+}

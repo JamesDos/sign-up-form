@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="left-container">
+    <div class="logo-container">
+      <img src="/images/odin-lined.png" alt="Odin">
+      <p>ODIN</p>
+    </div>
+  </div>
+  <div class="right-container">
+    <div class="section-1">
+      <p>This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up <em>now</em>
+        to get started.
+      </p>
+      <p>You <em>know</em> you want to.</p>
+
+    </div>
+    <div class="section-2">
+      <p>Let's Do This!</p>
+      <form action="" method="">
+        <div class="row1">
+          <div class="input-container">
+            <label for="first-name-field">FIRST NAME</label>
+            <input type="text" name="user_first_name" id="first-name-field" required>
+          </div>
+          <div class="last-name row1">
+            <label for="last-name-field">LAST NAME</label>
+            <input type="text" name="user_last_name" id="last-name-field" required>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="intput-container email">
+            <label for="email-field">EMAIL</label>
+            <input type="email" name="user_email" id="email-field" required>
+          </div>
+          <div class="phone-number">
+            <label for="phone-number-field">PHONE NUMBER</label>
+            <input type="tel" name="user_phone_number" id="phone-number-field" required>
+          </div>
+        </div>
+        <div class="row3">
+          <div class="input-container password">
+            <label for="password-field">PASSWORD</label>
+            <input type="password" name="user_password" id="password-field" class="error" required>
+          </div>
+          <div class="input-container confirm-password">
+            <label for="confirm-password-field">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm_user_passowrd" id="confirm-password-field" class="error" required>
+          </div>  
+        </div>
+      </form>
+    </div>
+    <div class="section-3">
+      <button type="submit" id="create-account-btn">Create Account</button>
+      <p>Already have an account? <span style="color: green">Log in</span></p>
+    </div>
+
+  </div>
+  
+</body>
+</html>
